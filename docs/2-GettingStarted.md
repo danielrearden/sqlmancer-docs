@@ -45,14 +45,14 @@ type Actor @model(table: "actor", pk: "id") {
 }
 ```
 
-Read more about defining models [here](defining-models).
+Read more about defining models [here](models).
 
 ## Generate your database client
 
 Create a fluent, type-safe database client from your type definitions by running a command like
 
 ```
-npx sqlmancer generate -d postgres -x SNAKE_CASE -t ./src/schema/*.gql
+npx sqlmancer generate -d postgres -x SNAKE_CASE -t ./src/schema/*.gql ./src/generated
 ```
 
 Read more about the available configuration options [here](config). Sqlmancer uses Knex under the hood and requires a Knex instance to initialize a new client instance. Read more about configuring Knex [here](https://knexjs.org/).
@@ -61,7 +61,7 @@ Read more about the available configuration options [here](config). Sqlmancer us
 const Knex = require('knex');
 const { createClient } = require('./generated/sqlmancer');
 
-const knex = new Knex({
+const knex = Knex({
   client: 'pg',
   connection: process.env.PG_CONNECTION_STRING,
 });
@@ -73,7 +73,7 @@ const client = createClient(knex);
 const resolvers = {
   Query: {
     films: (root, args, ctx, info) => {
-      return client.models.Film.findAll().resolveInfo(info).execute()
+      return client.models.Film.findMany().resolveInfo(info).execute()
     },
   },
 };
