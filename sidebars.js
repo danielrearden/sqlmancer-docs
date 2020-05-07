@@ -11,12 +11,23 @@ module.exports = {
     {
       type: 'category',
       label: 'Guides',
-      items: ['models', 'filtering', 'sorting', 'pagination', 'mutations'],
+      items: [
+        'models',
+        'relationships',
+        'filtering',
+        'sorting',
+        'pagination',
+        'aggregation',
+        'mutations',
+        'custom-scalars',
+        'unions-and-interfaces',
+        'subscriptions',
+      ],
     },
     {
       type: 'category',
       label: 'API Reference',
-      items: ['cli', 'config', 'directives', 'client', 'builders'],
+      items: ['cli', 'functions', 'directives', 'builders'],
     },
   ],
 }
