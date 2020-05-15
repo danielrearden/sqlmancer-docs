@@ -26,7 +26,7 @@ module.exports = {
           position: 'right',
         },
         {
-          href: 'https://github.com/danielrearden/sqlmancer/src/__tests__',
+          href: 'https://github.com/danielrearden/sqlmancer/tree/master/src/__tests__',
           label: 'Examples',
           position: 'right',
         },
