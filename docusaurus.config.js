@@ -65,8 +65,8 @@ module.exports = {
           title: 'Community',
           items: [
             {
-              label: 'Spectrum',
-              href: 'https://spectrum.chat/sqlmancer',
+              label: 'Discord',
+              href: 'https://discord.com/channels/625400653321076807/710279654140805230',
             },
             {
               label: 'Stack Overflow',

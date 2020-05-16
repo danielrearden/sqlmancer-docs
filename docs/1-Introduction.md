@@ -73,3 +73,7 @@ query FilmQuery {
 * **Limited type-generation.** Sqlmancer offers a number of convenient directives to generate arguments or types, but these directives are never required for Sqlmancer to work its magic. What types are exposed in the schema is ultimately left up to you.
 * **More than just CRUD.** Sqlmancer empowers you to create the queries and mutations that are right for your schema.
 * **Flexible and unopinionated.** Sqlmancer enabled you to easily add features like authorization, tracing, cost analysis and depth limits using existing libraries without paying for a "pro" version.
+
+## Community
+
+If you found a bug, have a feature request or want to contribute to the project, please open an issue. If you need help or have a question, you can ask on [Stack Overflow](https://stackoverflow.com/questions/tagged/sqlmancer) or come chat with us on [Discord](https://discord.com/channels/625400653321076807/710279654140805230)!
