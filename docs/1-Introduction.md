@@ -6,7 +6,7 @@ sidebar_label: Introduction
 
 :::caution
 
-This project is still in development. The API is still subject to change and suggestions are welcome. If you find a bug that doesn't already have an open issue, please open one.
+⚠️ **This project is currently on hiatus.** I am hoping to resume working on Sqlmancer once I have more free time. Feel free to submit new issues for feature requests or bug reports, although I may not address them immediately.
 
 :::
 
